@@ -119,8 +119,8 @@
 
   .image-gallary{
 
-    width: 1000px;
-    margin-top: 50px;
+    width: 1100px;
+    margin: 50px auto;
     justify-content:space-between;
     gap: 70px;
     align-items: center;
@@ -139,6 +139,8 @@
     .image-gallary{
         flex-direction: column;
         width: 100%;
+        align-items: start;
+
     }
 
     .img-container{
@@ -146,20 +148,20 @@
     }
   }
 
-  @media screen and (min-width:576px) and (max-width:990px){
+  @media screen and (min-width:576px) and (max-width:800px){
     .image-gallary{
         width: 100%;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
     }
 
     .img-container{
         max-width: 100%;
-        margin: 0 auto;
+        margin:0 auto;
     }
 
     .text{
-        margin: 0;
+        margin-left: 0;
         width: 100%;
     }
 
@@ -171,4 +173,66 @@
 
   .hide{
     display: none;
+  }
+
+  .some-facts{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+  }
+  
+
+  .card-1,  .card-2,  .card-3,  .card-4 .img-icon, .description ,p{
+    margin: 0;
+
+  }
+
+  .some-facts .div-1{
+    margin-bottom: 30px;
+  }
+
+  
+
+  .card-1,  .card-2,  .card-3,  .card-4{
+    text-align: center;
+    width: 200px;
+    height: 100px;
+   
+    box-shadow: 0 6px 50px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+
+
+  @media screen and (max-width:576px) {
+    .some-facts{
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+  }
+
+  @media screen and (min-width:577px) and (max-width:800px) {
+    .some-facts{
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .some-facts .div-1{
+        width: 100%;
+        margin-left: 0;
+      }
   }
