@@ -58,9 +58,13 @@
     align-items: center;
   }
 
-  header{
-    max-width: 1200px;
+  .navbar, .banner{
+    max-width: 1100px;
     margin: 0 auto;
+  }
+
+  header{
+   
     background-color: rgba(255, 144, 14, 0.1);
     padding: 20px;
   }
@@ -254,15 +258,15 @@
     width: 100%;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: space-between;
   }
 
   .sponsore-images img{
     filter: grayscale(100%);
-    width: 100%;
+    width: 300px;
   }
 
   @media screen and (max-width:576px) {
@@ -272,6 +276,9 @@
     .sponsors .sponsore-images{
         width: 100%;
         grid-template-columns: repeat(2,1fr);
+    }
+    .sponsore-images img{
+      width: 100%;
     }
   }
 
